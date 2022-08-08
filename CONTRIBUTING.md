@@ -1,1 +1,2 @@
-* js @ux
+*.js    @ux
+*.cs    @atef-aziz-eg
