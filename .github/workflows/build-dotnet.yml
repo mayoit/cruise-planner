@@ -2,8 +2,8 @@ name: "Build App"
 on: push
 jobs:
  build_app:
-	  name: "build app"
-		- runs-on: ubuntu-latest
-	  - steps:
-			 - name: Checkout repository
-			   uses: actions/checkout@v3
+  name: "build app"
+  runs-on: ubuntu-latest
+  steps:
+  - name: Checkout repository
+    uses: actions/checkout@v3
