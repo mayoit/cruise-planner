@@ -1,9 +1,9 @@
-name: Build App
-on:
-  push: [main]
+name: "Build App"
+on: push
 jobs:
-  build_app:
-		runs-on: [ubuntu:latest]
-	  steps:
-			- name: check out
-			  uses: action/checkout
+ build_app:
+	  name: "build app"
+		- runs-on: ubuntu-latest
+	  - steps:
+			 - name: Checkout repository
+			   uses: actions/checkout@v3
