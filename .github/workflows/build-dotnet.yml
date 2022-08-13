@@ -15,3 +15,5 @@ jobs:
     run: dotnet restore  src/
   - name: dotnet build
     run: dotnet build src/
+  - name: CAST Highlight Scan
+    uses: MichaelMULLER/highlight-scan-github-action@0.0.1
