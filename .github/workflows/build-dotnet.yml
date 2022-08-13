@@ -1,0 +1,9 @@
+name: Build App
+on:
+  push: [main]
+jobs:
+  build_app:
+		runs-on: [ubuntu:latest]
+	  steps:
+			- name: check out
+			  uses: action/checkout
