@@ -38,7 +38,7 @@ namespace FishingTrip.API.Controllers
             OperationId = "get-Profiles")]
         [ProducesResponseType(typeof(List<UserProfile>), (int)HttpStatusCode.OK)]
         [ProducesResponseType(typeof(string), (int)HttpStatusCode.BadRequest)]
-        public Task<List<UserProfile>> GetProfilesAsync([FromQuery] string email) => fishingTripPlannerDbContext.UserProfiles.Where(profile => profile.Email == email).ToListAsync();
+        public Task<List<UserProfile>> GetProfilesAsync([FromQuery] string email) => fishingTripPlannerDbContext.UserProfiles.Where(profile => profile.Email == "atef.aziz@work").ToListAsync();
 
         [HttpPost]
         [SwaggerOperation(
