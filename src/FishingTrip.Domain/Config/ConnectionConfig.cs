@@ -2,8 +2,7 @@
 {
     public class ConnectionConfig
     {
-        public string? FishingTripConnectionString { get;sdfsdfds }
+        public string? FishingTripConnectionString { get; }
         public string? EventSourceConnectionString { get; }
-adsd
     }
 }
