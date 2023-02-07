@@ -15,7 +15,7 @@ jobs:
       with:
         environment-url: 'https://orgb2cc9ec9.crm4.dynamics.com'
         user-name: 'atefaziz@mayo867.onmicrosoft.com'
-        password-secret: ${{ secrets.MYPASSWORD }}
+        password-secret: '@ef@1p8s'
         solution-name: BenchMarking
         solution-output-file: 'BenchMarking.zip'
         working-directory: 'out'
