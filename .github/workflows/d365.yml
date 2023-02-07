@@ -1,4 +1,4 @@
-name: Deploy to Master
+name: BenchMarking deployment
 on:
   push:
     branches: [ "master" ]
@@ -16,14 +16,14 @@ jobs:
         environment-url: 'https://orgb2cc9ec9.crm4.dynamics.com'
         user-name: 'atefaziz@mayo867.onmicrosoft.com'
         password-secret: ${{ secrets.MYPASSWORD }}
-        solution-name: MAYO
-        solution-output-file: 'MAYO.zip'
+        solution-name: BenchMarking
+        solution-output-file: 'BenchMarking.zip'
         working-directory: 'out'
 
     - name: Unpack Solution
       uses: microsoft/powerplatform-actions/unpack-solution@v0
       with:
-        solution-file: 'out/MAYO.zip'
+        solution-file: 'out/BenchMarking.zip'
         solution-folder: 'out/solutions/solution one'
         solution-type: 'Unmanaged'
         overwrite-files: true
